@@ -1,0 +1,100 @@
+$prime: #278886
+$second: #e94848
+$dark: #323031
+$yellow: #FFC857
+$white: #fff
+$black: #000
+  
+html,
+body
+  height: 100%
+  font-family: sans-serif
+  margin: 0
+
+  ::selection
+    background-color: $prime
+    color: $white
+
+  header
+    nav
+      display: flex
+      justify-content: space-between
+      align-items: center
+      padding: 1.5rem 1rem
+      background-color: $prime
+      color: $white
+
+      .logo
+        font-weight: bold
+        border: solid .2rem
+        padding: .5rem
+        background-color: $white
+        color: $prime
+
+      .dark
+        font-weight: bold
+        border: solid .2rem
+        padding: .5rem
+        background-color: $prime
+        color: $white
+        transition: all 250ms ease
+
+        &:hover
+          background-color: $white
+          color: $prime
+          border: solid .2rem
+
+      ul
+        display: flex
+        gap: 1rem
+        margin: 0
+        padding: 0
+
+        li
+          list-style-type: none
+          font-style: italic
+
+          a
+            color: $white
+            transition: all 250ms ease
+
+            &:hover
+              text-decoration: none
+              color: $second
+              font-weight: bold
+
+    .hero
+      background-color: $second
+      color: $white
+      margin: 0
+      padding: 4rem 2rem
+      display: flex
+      justify-content: space-between
+
+      img
+        width: 15rem
+        height: auto
+
+  main
+    padding: 1rem
+    color: $dark
+
+    h2
+      text-align: center
+    
+    p
+      margin-bottom: 2rem
+
+  footer
+    text-align: center
+    padding: .5rem
+    background-color: $yellow
+
+    a
+      color: $black
+      transition: all 250ms ease
+
+      &:hover
+        text-decoration: none
+        color: $second
+        font-weight: bold
